@@ -1,12 +1,5 @@
-// const heading = React.createElement("h1",{id:"heading"},"its vins.......")
-
-// console.log(heading); //object
-
-// const root = ReactDOM.createRoot(document.getElementById("root"));
-
-// console.log(root); //object
-
-// root.render(heading)
+import React from "react";
+import ReactDOM from "react-dom/client";
 
 const parent = React.createElement("div", { id: "parent" }, [
     React.createElement("div", { id: "child" }, [
@@ -18,13 +11,7 @@ const parent = React.createElement("div", { id: "parent" }, [
         React.createElement("h2", {}, "i am child2 h2"),
     ]),
 ]);
-
-// console.log(parent);
-
-const parent2 = React.createElement("h1", {}, "parent2");
-
+ 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-const root2 = ReactDOM.createRoot(document.getElementById("root2"));
-
-root2.render(parent2);
+ 
 root.render(parent);
